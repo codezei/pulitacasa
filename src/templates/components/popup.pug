@@ -1,0 +1,20 @@
+dialog.popup.popup-center#popupSuccess
+	form(method="dialog")
+		button.btn.btn-circle.btn-small.popup__close
+			svg.d-block(width="16" height="16")
+				use(href="#close")
+		.card.card-primary-outline.card-rounded.h-auto
+			.text-center 
+				svg.d-block(width="48" height="48")
+					use(href="#check")
+			.text-center Twoja wiadomość została pomyślnie wysłana. Prosimy poczekać, aż nasz menedżer skontaktuje się z Tobą w celu uzgodnienia szczegółów.
+dialog.popup.popup-center#popupError
+	form(method="dialog")
+		button.btn.btn-circle.btn-small.popup__close
+			svg.d-block(width="16" height="16")
+				use(href="#close")
+		.card.card-primary-outline.card-rounded.h-auto
+			.text-center 
+				svg.d-block(width="48" height="48")
+					use(href="#error")
+		.text-center Wystąpił błąd podczas wysyłania wiadomości.

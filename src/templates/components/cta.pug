@@ -1,0 +1,40 @@
+
+dialog.popup.popup-center#ctaPopup
+	p.text-right
+		button.btn.btn-primary.btn-circle.btn-small.popup__close(onclick="ctaPopup.close()")
+			svg.d-block(width="16" height="16")
+				use(href="#close")
+	.card.card-primary-outline.card-rounded.h-auto.overflow-hidden
+			.card__body 
+				form#cta-form(method="POST")
+					.row.g-3 
+						.col-12 
+							input.input.cta__input.card.card-secondary.card-rounded(type="text" placeholder="Imię" name="name", required)
+						.col-12 
+							input.input.cta__input.card.card-secondary.card-rounded(type="tel" placeholder="Telefon" name="phone", required)
+						.col-12 
+							textarea.input.cta__input.card.card-secondary.card-rounded(placeholder="Wiadomość" name="message" rows="4")
+						.col-12 
+							button.btn.btn-contrast.btn-normal.btn-pillow.cta__btn(type="submit") 
+								| Wyślij zgłoszenie
+button.cta-button.btn.btn-primary.btn-circle.btn-large.btn-pulse(onclick="ctaPopup.showModal()")
+	svg.icon.shake(width="16" height="16")
+		use(href="#tel")
+dialog.popup.popup-center#popupCtaSuccess
+	button.btn.btn-circle.btn-small.popup__close(onclick="popupCtaSuccess.close()")
+		svg.d-block(width="16" height="16")
+			use(href="#close")
+	.card.card-primary-outline.card-rounded.h-auto
+		.text-center 
+			svg.d-block(width="48" height="48")
+				use(href="#check")
+		.text-center Twoja wiadomość została pomyślnie wysłana. Prosimy poczekać, aż nasz menedżer skontaktuje się z Tobą w celu uzgodnienia szczegółów.
+dialog.popup.popup-center#popupCtaError
+	button.btn.btn-circle.btn-small.popup__close(onclick="popupCtaSuccess.close()")
+		svg.d-block(width="16" height="16")
+			use(href="#close")
+	.card.card-primary-outline.card-rounded.h-auto
+		.text-center 
+			svg.d-block(width="48" height="48")
+				use(href="#error")
+	.text-center Wystąpił błąd podczas wysyłania wiadomości.

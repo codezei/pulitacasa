@@ -1,0 +1,62 @@
+dialog.popup.popup-top-right.popup-narrow#cartPopup
+	p.text-right
+		button.btn.btn-small.btn-primary-outline.btn-circle.cart-close(onclick="cartPopup.close()")
+			svg.d-block(width="16" height="16")
+				use(href="#close")
+	.card.card-primary.card-rounded
+		.cart
+			.cart-fill
+				.cart__body
+				.cart__footer
+					.cart__total-title.text-bold Total:
+					.cart__total-value
+				.cart__order
+					form.order-form(method="POST")
+						.row.g-2 
+							.col-12 
+								input.input.card.card-secondary.card-small.card-pillow.w-100(type="text" placeholder="Imię" name="name", required)
+							.col-12 
+								input.input.card.card-secondary.card-small.card-pillow.w-100(type="tel" placeholder="Telefon" name="phone", required)
+							.col-12 
+								button.btn.btn-contrast.btn-small.btn-pillow(type="submit") Wyślij zgłoszenie
+			.cart-empty 
+				.cart__message.text-center Twój koszyk jest pusty
+				a.btn.btn-contrast.btn-small.btn-pillow.w-100.text-center(href="#price") Dodaj usługi
+button.btn.btn-primary-outline.btn-large.btn-circle.cart-button.cart-open(onclick="cartPopup.show()")
+	span.cart-button__count
+	svg.icon.cart-button__icon-empty(width="16" height="16")
+		use(href="#cart-empty")
+	svg.icon.cart-button__icon-fill(width="16" height="16")
+		use(href="#cart-fill")
+dialog.popup.popup-center#popupOrderSuccess
+	button.btn.btn-circle.btn-small.popup__close
+		svg.d-block(width="16" height="16")
+			use(href="#close")
+	.card.card-primary-outline.card-rounded.h-auto
+		.text-center 
+			svg.d-block(width="48" height="48")
+				use(href="#check")
+		.text-center Twoja wiadomość została pomyślnie wysłana. Prosimy poczekać, aż nasz menedżer skontaktuje się z Tobą w celu uzgodnienia szczegółów.
+dialog.popup.popup-center#popupOrderError
+	button.btn.btn-circle.btn-small.popup__close
+		svg.d-block(width="16" height="16")
+			use(href="#close")
+	.card.card-primary-outline.card-rounded.h-auto
+		.text-center 
+			svg.d-block(width="48" height="48")
+				use(href="#error")
+		.text-center Wystąpił błąd podczas wysyłania wiadomości.
+template(id="cart-item-template")
+	.cart-item 
+		.cart-item__name.text-bold 
+		.cart-item__info
+			.cart-item__price.text-nowrap 
+			.cart-item__quantity
+				button.cart-item__decrease-count.btn.btn-primary-outline.btn-extra-small.btn-circle 
+					svg(width="8" height="8")
+						use(href="#minus")
+				.cart-item__count.text-nowrap
+				button.cart-item__increase-count.btn.btn-primary-outline.btn-extra-small.btn-circle
+					svg(width="8" height="8")
+						use(href="#plus")
+			.cart-item__summary.text-nowrap

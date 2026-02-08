@@ -1,0 +1,96 @@
+.indicators {
+
+}
+
+.results {
+
+}
+
+
+.result {
+  --progress-size: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+  // &__progress {
+  //   margin-bottom: 1rem;
+  // }
+  &__description {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 992px) {
+    --progress-size: 120px;
+  }
+
+  @media screen and (min-width: 1220px) {
+    --progress-size: 150px;
+  }
+}
+
+
+
+.progress {
+  position: relative;
+  width: var(--progress-size);
+  height: var(--progress-size);
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  // background: $white;
+  border-radius: 50%;
+
+
+  &__bar {
+    width: 100%;
+    height: 100%;
+    transform: rotate(0deg);
+    transform-origin: center center;
+    overflow: visible;
+    
+    background: var(--first-color);
+    color: var(--fourth-color);
+    border-radius: 50%;
+  }
+
+  &__bar-bg {
+    stroke: #fff;
+    stroke-width: 20px;
+    fill: none;
+  }
+
+  &__bar-fg {
+    stroke: url(#progress-gradient);
+    stroke-width: 20px;
+    fill: none;
+    /* Довжина кола (2 * PI * R) = 2 * 3.1415 * 45 = 282.7 */
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: 251.2;
+    transition: stroke-dashoffset 2s ease-out;
+    will-change: stroke-dashoffset;
+  }
+
+  &__value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--fourth-color);
+
+    &-number {
+      font-size: var(--h1);
+    }
+
+    &-percent {
+      font-size: 0.75rem;
+    }
+  }
+
+}

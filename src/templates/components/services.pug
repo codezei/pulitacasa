@@ -1,0 +1,213 @@
+section.services#services.block.section-light
+	.block__rectangle
+	.container
+		.row.g-4
+			.col-12
+				.row.align-items-center.justify-content-between.g-2
+					.col-auto(data-aos="fade-right") 
+						h2.services__title.text-uppercase.mb-0 Servizi
+					.col-auto(data-aos="fade-left")  
+						.swiper-navigation
+							.services-button-prev.btn.btn-primary.btn-small.btn-circle
+								svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+							.services-button-next.btn.btn-primary.btn-small.btn-circle
+								svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+					.col-12(data-aos="fade-in")
+						h3.h6.services__subtitle.text-light.mb-0 Rimuoviamo macchie, odori e polvere da ogni superficie — mobili imbottiti, tappeti, materassi e persino vetri
+			.col-12(data-aos="fade-in" data-aos-delay="100")  
+				.swiper.services-swiper 
+					.swiper-wrapper
+						.swiper-slide
+							.service.card.card-primary-outline
+								//- диван
+								.service__header
+									.service__img
+										picture
+											//- source(srcset="img/service-furniture.webp" type="image/webp")
+											img(src="img/service-furniture.png" alt="Pulizia professionale dei divani" loading="lazy" height="200")
+								.service__body
+									h3.h6.service__title.text-third Pulizia professionale dei divani
+									.service__description Rimuoviamo lo sporco, rinfreschiamo il tessuto e restituiamo al divano morbidezza e un aspetto ordinato. La pulizia viene effettuata con macchinari professionali e prodotti sicuri. Divani - a partire da 60 € (Il prezzo varia in base al numero di posti e al tipo di tessuto.)
+								.service__footer 
+									a.btn.btn-primary.btn-normal.btn-pillow.w-100.text-center(href="tel:3514705328")
+										svg.icon.icon-right.shake(width="16" height="16")
+											use(href="#tel") 
+										| Chiama ora
+									//- .cta-controls 	
+									//- 	.cta-controls__item
+									//- 		button.service__btn.btn.btn-primary-outline.btn-small.btn-pillow.w-100.text-nowrap.text-center(type="button", onclick="popupFurniture.showModal()") Więcej informacji
+									//- 	.cta-controls__item
+									//- 		a.service__btn.btn.btn-primary.btn-small.btn-pillow.w-100.text-nowrap.text-center(href="#price") Cennik
+						.swiper-slide
+							.service.card.card-primary-outline
+								.service__header
+									.service__img
+										picture.service__img
+											//- source(srcset="img/service-mattress.webp" type="image/webp")
+											img(src="img/service-mattress.png" alt="Pulizia dei materassi" loading="lazy" height="200")
+								.service__body
+									h3.h6.service__title.text-third Pulizia dei materassi
+									.service__description Il materasso torna fresco e piacevole per il riposo. Eliminiamo odori e tracce dell’uso quotidiano, restituendo una sensazione immediata di pulizia. Materassi - a partire da 80 € (Singolo, matrimoniale o king: il prezzo viene definito in base alle dimensioni.)
+								.service__footer 
+									a.btn.btn-primary.btn-normal.btn-pillow.w-100.text-center(href="tel:3514705328")
+										svg.icon.icon-right.shake(width="16" height="16")
+											use(href="#tel") 
+										| Chiama ora
+									//- .cta-controls 	
+									//- 	.cta-controls__item
+									//- 		button.service__btn.btn.btn-secondary.btn-small.btn-pillow.w-100.text-nowrap.text-center(type="button", onclick="popupMattress.showModal()") Więcej informacji
+									//- 	.cta-controls__item
+									//- 		a.service__btn.btn.btn-primary.btn-small.btn-pillow.w-100.text-nowrap.text-center(href="#price") Cennik
+						.swiper-slide
+							.service.card.card-primary-outline
+								.service__header
+									.service__img
+										picture.service__img
+											//- source(srcset="img/service-carpet.webp" type="image/webp")
+											img(src="img/service-carpet.png" alt="Pulizia dei tappeti" loading="lazy" height="200")
+								.service__body
+									h3.h6.service__title.text-third Pulizia dei tappeti
+									.service__description Puliamo in profondità le fibre, ravviviamo i colori e miglioriamo l’aspetto generale del tappeto. Il trattamento è adatto sia ai tappeti sottili sia alle superfici tessili più spesse. Tappeti - a partire da 20 € (Calcolato in base alle misure del tappeto.)
+								.service__footer 
+									a.btn.btn-primary.btn-normal.btn-pillow.w-100.text-center(href="tel:3514705328")
+										svg.icon.icon-right.shake(width="16" height="16")
+											use(href="#tel") 
+										| Chiama ora
+									//- .cta-controls 	
+									//- 	.cta-controls__item
+									//- 		button.service__btn.btn.btn-secondary.btn-small.btn-pillow.w-100.text-nowrap.text-center(type="button", onclick="popupCarpet.showModal()") Więcej informacji
+									//- 	.cta-controls__item
+									//- 		a.service__btn.btn.btn-primary.btn-small.btn-pillow.w-100.text-nowrap.text-center(href="#price") Cennik
+						.swiper-slide
+							.service.card.card-primary-outline
+								.service__header
+									.service__img
+										picture.service__img
+											//- source(srcset="img/service-salon.webp" type="image/webp")
+											img(src="img/service-pillow.png" alt="Pulizia cuscini e sedie" loading="lazy" height="200")
+								.service__body
+									h3.h6.service__title.text-third Pulizia cuscini e sedie
+									.service__description Pulizia Cuscini Cuscini - a partire da 10 € (Cuscini divano, schienali, imbottiture varie.) Pulizia Sedie Sedie imbottite - a partire da 20 € (Seduta o seduta + schienale, secondo il modello.)
+								.service__footer 
+									a.btn.btn-primary.btn-normal.btn-pillow.w-100.text-center(href="tel:3514705328")
+										svg.icon.icon-right.shake(width="16" height="16")
+											use(href="#tel") 
+										| Chiama ora
+									//- .cta-controls 	
+									//- 	.cta-controls__item
+									//- 		button.service__btn.btn.btn-secondary.btn-small.btn-pillow.w-100.text-nowrap.text-center(type="button", onclick="popupSalon.showModal()") Więcej informacji
+									//- 	.cta-controls__item
+									//- 		a.service__btn.btn.btn-primary.btn-small.btn-pillow.w-100.text-nowrap.text-center(href="#price") Cennik
+						.swiper-slide
+							.service.card.card-primary-outline
+								.service__header
+									.service__img
+										picture.service__img
+											//- source(srcset="img/service-window.webp" type="image/webp")
+											img(src="img/service-armchair.png" alt="Pulizia Poltrone" loading="lazy" height="200")
+								.service__body
+									h3.h6.service__title.text-third Pulizia Poltrone
+									.service__description Poltrone – a partire da 30 € (Poltrone classiche, relax o imbottite.)
+								.service__footer 
+									a.btn.btn-primary.btn-normal.btn-pillow.w-100.text-center(href="tel:3514705328")
+										svg.icon.icon-right.shake(width="16" height="16")
+											use(href="#tel") 
+										| Chiama ora
+									//- .cta-controls 	
+									//- 	.cta-controls__item
+									//- 		button.service__btn.btn.btn-secondary.btn-small.btn-pillow.w-100.text-nowrap.text-center(type="button", onclick="popupWindow.showModal()") Więcej informacji
+									//- 	.cta-controls__item
+									//- 		a.service__btn.btn.btn-primary.btn-small.btn-pillow.w-100.text-nowrap.text-center(href="#price") Cennik
+	//- dialog.popup.popup-center#popupFurniture
+	//- 	p.text-right
+	//- 		button.btn.btn-primary.btn-circle.btn-small.popup__close(onclick="popupFurniture.close()")
+	//- 			svg.d-block(width="16" height="16")
+	//- 				use(href="#close")
+	//- 	.card.card-primary-outline.card-rounded.h-auto.overflow-hidden 
+	//- 		h4.h6.text-center Profesjonalne pranie tapicerki meblowej w domu klienta
+	//- 		p Oferujemy skuteczne pranie tapicerki meblowej, które usuwa plamy, zapachy oraz głęboko osadzony brud z sof, narożników i foteli. Nasze czyszczenie tapicerki wykonywane jest metodą ekstrakcyjną, dzięki czemu tkaniny są dokładnie wypłukane i szybciej schną.
+	//- 		p Regularne pranie tapicerki meblowej poprawia wygląd mebli, usuwa alergeny i przedłuża ich żywotność.
+	//- 		h4.h6 Czyścimy:
+	//- 		ul
+	//- 			li narożniki L i U
+	//- 			li kanapy, wersalki
+	//- 			li sofy rozkładane
+	//- 			li fotele (także uszaki)
+	//- 			li krzesła tapicerowane
+	//- 			li poduchy meblowe
+	//- 			li fotele biurowe
+	//- 		.popup__controls(onclick="popupFurniture.close()")
+	//- 			include cta-button
+	//- dialog.popup.popup-center#popupMattress
+	//- 	.card.card-primary-outline.card-rounded.h-auto.overflow-hidden 
+	//- 		form(method="dialog")
+	//- 			.text-right
+	//- 				button.btn.btn-primary.btn-circle.btn-small.popup__close(onclick="popupMattress.close()")
+	//- 					svg.d-block(width="16" height="16")
+	//- 						use(href="#close")
+	//- 			h4.h6 Profesjonalne czyszczenie i pranie materacy
+	//- 			p Oferujemy skuteczne czyszczenie materacy, które usuwa pot, plamy biologiczne, kurz, roztocza i nieprzyjemne zapachy. Nasze pranie materacy poprawia higienę snu i jest szczególnie polecane alergikom oraz rodzinom z dziećmi.
+	//- 			p Dzięki głębokiemu płukaniu włókien czyszczenie materaca usuwa zanieczyszczenia, których nie widać gołym okiem.
+	//- 			h4.h6 Czyścimy:
+	//- 			ul 
+	//- 				li materace jednoosobowe
+	//- 				li materace dwuosobowe
+	//- 				li pranie z jednej lub z obu stron
+	//- 			.popup__controls(onclick="popupMattress.close()")
+	//- 				include cta-button
+	//- dialog.popup.popup-center#popupCarpet
+	//- 	.card.card-primary-outline.card-rounded.h-auto.overflow-hidden 
+	//- 		form(method="dialog")
+	//- 			.text-right
+	//- 				button.btn.btn-primary.btn-circle.btn-small.popup__close(onclick="popupCarpet.close()")
+	//- 					svg.d-block(width="16" height="16")
+	//- 						use(href="#close")
+	//- 			h4.h6 Profesjonalne pranie dywanów i czyszczenie wykładzin
+	//- 			p Nasze pranie dywanów usuwa plamy, sierść zwierząt, kurz i alergeny z głębi włókien. Oferujemy także czyszczenie wykładzin w domach, biurach i lokalach usługowych.
+	//- 			p Regularne pranie dywanów przywraca świeżość kolorów i poprawia higienę pomieszczeń.
+	//- 			h4.h6 Czyścimy:
+	//- 			ul 
+	//- 				li dywany syntetyczne i naturalne
+	//- 				li wykładziny domowe
+	//- 				li wykładziny biurowe
+	//- 				li duże powierzchnie (wycena indywidualna)
+	//- 			.popup__controls(onclick="popupCarpet.close()")
+	//- 				include cta-button
+	//- dialog.popup.popup-center#popupSalon
+	//- 	.card.card-primary-outline.card-rounded.h-auto.overflow-hidden 
+	//- 		form(method="dialog")
+	//- 			.text-right
+	//- 				button.btn.btn-primary.btn-circle.btn-small.popup__close(onclick="popupSalon.close()")
+	//- 					svg.d-block(width="16" height="16")
+	//- 						use(href="#close")
+	//- 			h4.h6 Profesjonalne pranie tapicerki samochodowej
+	//- 			p Oferujemy dokładne pranie tapicerki samochodowej, które usuwa plamy, kurz, pot i zapachy z wnętrza auta. Nasze czyszczenie tapicerki samochodowej poprawia komfort jazdy i higienę wnętrza pojazdu.
+	//- 			h4.h6 Czyścimy:
+	//- 			ul 
+	//- 				li fotele przednie i tylne
+	//- 				li kanapy
+	//- 				li podsufitka
+	//- 				li boczki drzwi
+	//- 				li podłogi i dywaniki
+	//- 				li bagażnik
+	//- 			.popup__controls(onclick="popupSalon.close()")
+	//- 				include cta-button
+	//- dialog.popup.popup-center#popupWindow
+	//- 	.card.card-primary-outline.card-rounded.h-auto.overflow-hidden 
+	//- 		form(method="dialog")
+	//- 			.text-right
+	//- 				button.btn.btn-primary.btn-circle.btn-small.popup__close(onclick="popupWindow.close()")
+	//- 					svg.d-block(width="16" height="16")
+	//- 						use(href="#close")
+	//- 			h4.h6 Profesjonalne mycie okien u klienta
+	//- 			p Oferujemy dokładne mycie okien, które usuwa kurz, smog, zacieki i osady po deszczu. Nasze czyszczenie okien zapewnia idealną przejrzystość szyb bez smug.
+	//- 			h4.h6 Czyścimy:
+	//- 			ul 
+	//- 				li mycie szyb z obu stron
+	//- 				li ramy okienne
+	//- 				li parapety
+	//- 				li usuwanie zacieków
+	//- 			.popup__controls(onclick="popupWindow.close()")
+	//- 				include cta-button

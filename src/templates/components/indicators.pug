@@ -1,0 +1,67 @@
+section.indicators#indicators.section.section-dark
+	svg(width="0" height="0" style="position: absolute;")
+		defs
+			lineargradient#progress-gradient(x1="0%" y1="0%" x2="100%" y2="0%")
+				stop(offset="0%" stop-color="#fffaed")
+				stop(offset="100%" stop-color="#fde9a8")
+	.container
+		.row.justify-content-center.justify-content-sm-start 
+			.col-10.col-sm-7 
+				.section__shape.section__shape-top.section__inner(data-aos="fade-right" data-aos-delay="200")
+					h2.section__title.text-uppercase I nostri risultati
+					h3.h6.section__subtitle.mb-0 Numeri che ispirano fiducia ai nostri clienti
+			.col-12
+				.block 
+					.row.g-3 
+						.col-12.col-md-6.col-lg-3
+							.card.card-primary-outline.card-leaf
+								.result.text-md-center
+									.result__progress
+										.progress
+											svg.progress__bar(viewBox="0 0 100 100" data-progress="80")
+												circle.progress__bar-bg(cx="50" cy="50" r="40")
+												circle.progress__bar-fg(cx="50" cy="50" r="40")
+											.progress__value.text-bold.text-pink 
+												span.progress__value-number
+												span.progress__value-percent 
+									.result__description.text-bold.h6.text-bigger.text-lg-normal ordini completati settimanalmente
+						.col-12.col-md-6.col-lg-3
+							.card.card-primary-outline.card-leaf
+								.result.text-md-center
+									.result__progress
+										.progress
+											svg.progress__bar(viewBox="0 0 100 100" data-progress="93")
+												circle.progress__bar-bg(cx="50" cy="50" r="40")
+												circle.progress__bar-fg(cx="50" cy="50" r="40")
+											.progress__value.text-bold.text-pink 
+												span.progress__value-number
+												span.progress__value-percent %
+									.result__description.text-bold.h6.text-bigger.text-lg-normal clienti che tornano da noi
+						.col-12.col-md-6.col-lg-3
+							.card.card-primary-outline.card-leaf
+								.result.text-md-center
+									.result__progress
+										.progress
+											svg.progress__bar(viewBox="0 0 100 100" data-progress="95")
+												circle.progress__bar-bg(cx="50" cy="50" r="40")
+												circle.progress__bar-fg(cx="50" cy="50" r="40")
+											.progress__value.text-bold.text-pink 
+												span.progress__value-number
+												span.progress__value-percent %
+									.result__description.text-bold.h6.text-bigger.text-lg-normal clienti soddisfatti dei risultati
+						.col-12.col-md-6.col-lg-3
+							.card.card-primary-outline.card-leaf
+								.result.text-md-center
+									.result__progress
+										.progress
+											svg.progress__bar(viewBox="0 0 100 100" data-progress="100")
+												circle.progress__bar-bg(cx="50" cy="50" r="40")
+												circle.progress__bar-fg(cx="50" cy="50" r="40")
+											.progress__value.text-bold.text-pink 
+												span.progress__value-number
+												span.progress__value-percent %
+									.result__description.text-bold.h6.text-bigger.text-lg-normal mobili dopo la pulizia sembrano nuovi
+			.col-10.col-sm-7.col-xl-3.offset-4.offset-sm-6.offset-xl-9
+				.section__shape.section__shape-bottom.section__inner(data-aos="flip-right" data-aos-delay="200")
+					.section__btn
+						include cta-button

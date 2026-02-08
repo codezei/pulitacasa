@@ -1,0 +1,105 @@
+.section {
+  position: relative;
+  &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  &__shape {
+    height: 80px;
+    background: var(--section-color);
+    position: relative;
+    z-index: 2;
+    &:before, &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 80px;
+      width: 80px;
+      background: var(--section-color);
+      clip-path: path("M 0,0 A 40,40 0,0,1 40,40 A 40,40 0,0,0 80,80 L 80,0");
+    }
+
+    &:before {
+      right: 100%;
+    }
+    &:after {
+      left: 100%;
+      
+    }
+    &-top {
+      filter: drop-shadow(5px 0 0 var(--neutral-color)) drop-shadow(-5px 0 0 var(--neutral-color)) drop-shadow(0 5px 0 var(--neutral-color));
+      &:before {
+
+      }
+      &:after {
+        transform: scale(-1, 1);
+      }
+    }
+    &-bottom {
+      filter: drop-shadow(5px 0 0 var(--neutral-color)) drop-shadow(-5px 0 0 var(--neutral-color)) drop-shadow(0 -5px 0 var(--neutral-color));
+      &:before {
+        transform: scale(1, -1);
+      }
+      &:after {
+        transform: scale(-1, -1);
+      }
+    }
+
+
+  }
+  // &__btn .btn {
+  //   margin-left: -20px;
+  //   margin-right: -20px;
+  //   width: calc(100% + 40px);
+  //   z-index: 2;
+  // }
+  // &__title {
+  //   color: var(--section-color);
+  // }
+  // &__subtitle {
+  //   color: var(--section-color);
+  // }
+}
+
+.section-dark {
+  --section-color: var(--first-color-75);
+  --text-color: var(--fourth-color);
+  border-radius: 0 10rem;
+  max-width: calc(100% - 20px);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: inset 0 6px var(--neutral-color), inset 0 -6px var(--neutral-color);
+  // background-color: var(--fourth-color);
+  // background-image: url(../img/icons.png);
+    background: linear-gradient(to right, var(--neutral-color) 0%, var(--first-color) 70%, transparent 100%), url(../img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right center;
+  position: relative;
+  &:before, &:after {
+    content: "";
+    display: block;
+    height: 100%;
+    max-height: 100vw;
+    border-radius: 20rem;
+    aspect-ratio: 1/1;
+    background: radial-gradient(transparent 0%, var(--first-color) 70%), url(../img/boobles-2.png);
+    background-size: contain, contain;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(-90deg);
+  }
+  &:before {
+    left: 0;
+    bottom: 0;
+    transform-origin: center bottom;
+  }
+  &:after {
+    right: 0;
+    bottom: 0;
+    transform-origin: center top;
+  }
+}
+

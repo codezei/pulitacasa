@@ -1,0 +1,95 @@
+section#price.price.block.section-white
+	.container
+		.row.g-4
+			.col-12
+				.row.align-items-center.justify-content-between.g-2
+					.col-auto(data-aos="fade-right")
+						h2.price__title.text-uppercase.mb-0 Cennik
+					.col-auto.offset-auto(data-aos="fade-left")
+						.swiper-navigation
+							.price-button-prev.btn.btn-primary.btn-small.btn-circle
+								svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+							.price-button-next.btn.btn-primary.btn-small.btn-circle
+								svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+					.col-12(data-aos="fade-in") 
+						h3.price__subtitle.h6.text-light.mb-0 Wybierz kategorię i sprawdź ceny usług, których potrzebujesz
+			.col-12(data-aos="fade-in" data-aos-delay="100")
+				.categories-navigation
+					.categories-navigation-swiper
+						.swiper-wrapper 
+							.swiper-slide
+								button.btn.btn-primary.btn-small.btn-pillow.category-btn(type="button") 
+									span.category-btn__text Divani
+									//- span.category-btn__connect
+							.swiper-slide
+								button.btn.btn-primary.btn-small.btn-pillow.category-btn(type="button") 
+									span.category-btn__text Materassi
+									//- span.category-btn__connect
+							.swiper-slide
+								button.btn.btn-primary.btn-small.btn-pillow.category-btn(type="button") 
+									span.category-btn__text Tappeti
+									//- span.category-btn__connect
+							.swiper-slide
+								button.btn.btn-primary.btn-small.btn-pillow.category-btn(type="button") 
+									span.category-btn__text Cuscini/Sedie
+									//- span.category-btn__connect
+							.swiper-slide
+								button.btn.btn-primary.btn-small.btn-pillow.category-btn(type="button") 
+									span.category-btn__text Poltrone
+									//- span.category-btn__connect
+				.categories-content
+					.swiper.categories-content-swiper(data-next-selector=".price-button-next", data-prev-selector=".price-button-prev")
+						.swiper-wrapper 
+							.swiper-slide
+								.price-table
+									.row.price-table__row.g-2
+										.col-12.price-table__col
+											//- h4.h5.text-center.mb-0 Ceny prania tapicerki meblowej | 
+											//- hr
+										include price/price-furniture
+							.swiper-slide
+								.price-table
+									.row.price-table__row.g-2
+										.col-12.price-table__col
+											//- h4.h5.text-center.mb-0 Ceny prania materacy | 
+											//- hr
+										include price/price-mattress
+							.swiper-slide
+								.price-table
+									.row.price-table__row.g-2
+										.col-12.price-table__col
+											//- h4.h5.text-center.mb-0 Ceny prania dywanów i wykładzin | 
+											//- hr
+										include price/price-carpet
+							.swiper-slide
+								.price-table
+									.row.price-table__row.g-2
+										.col-12.price-table__col
+											//- h4.h5.text-center.mb-0 Ceny prania tapicerki samochodowej | 
+											//- hr
+										include price/price-pillow
+							.swiper-slide
+								.price-table
+									.row.price-table__row.g-2
+										.col-12.price-table__col
+											//- h4.h5.text-center.mb-0 Mycie okien | 
+											//- hr
+										include price/price-armchair
+			//- .col-12
+			//- 	div.text-center 
+			//- 		small
+			//- 			svg.icon.icon-right(width="16", height="16")
+			//- 				use(href="#info")
+			//- 			span Niestety nie możemy gwarantować, że każda plama poszczególna zejdzie, oraz nie gwarantujemy, że każdy nieprzyjemny zapach zniknie.
+			//- 		br
+			//- 		small
+			//- 			svg.icon.icon-right(width="16", height="16")
+			//- 				use(href="#info")
+			//- 			span Cennik jest orientacyjny. Dokładna kwota zależy od rodzaju materiału, stanu zabrudzenia, wielkości czyszczonego przedmiotu.
+			//- 		br
+			//- 		small
+			//- 			svg.icon.icon-right(width="16" height="16")
+			//- 				use(href="#info")
+			//- 			span Również mamy dodatkową opcje suszenie waszych mebli, dywanów, materaców oraz suszenie foteli auta.

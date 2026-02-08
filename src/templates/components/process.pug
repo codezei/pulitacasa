@@ -1,0 +1,113 @@
+section.process#process-cleaning.block.section-light
+	.block__rectangle
+	.container
+		.row.g-4 
+			.col-12
+				.row.align-items-center.justify-content-between.g-2
+					.col-auto(data-aos="fade-right")
+						h2.process__title.text-uppercase.mb-0 Processo di lavaggio
+					.col-auto(data-aos="fade-left")
+						.swiper-navigation
+							.process-button-prev.btn.btn-primary.btn-small.btn-circle
+								svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+							.process-button-next.btn.btn-primary.btn-small.btn-circle
+								svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+					.col-12(data-aos="fade-in")
+						h3.h6.process__subtitle.text-light.mb-0 Scopri come avviene l'intero processo di pulizia della tappezzeria
+			.col-12 
+				.row.g-2
+					.col-12.col-xl-8.d-flex.flex-column(data-aos="fade-in") 
+						.categories-navigation
+							.categories-navigation-swiper 
+								.swiper-wrapper 
+									.swiper-slide
+										button.btn.btn-primary.btn-small.btn-pillow.category-btn(type="button") 
+											span.category-btn__text Divani
+											//- span.category-btn__connect
+									.swiper-slide
+										button.btn.btn-primary.btn-small.btn-pillow.category-btn(type="button") 
+											span.category-btn__text Materassi
+											//- span.category-btn__connect
+									.swiper-slide
+										button.btn.btn-primary.btn-small.btn-pillow.category-btn(type="button") 
+											span.category-btn__text Tappeti
+											//- span.category-btn__connect
+									.swiper-slide
+										button.btn.btn-primary.btn-small.btn-pillow.category-btn(type="button") 
+											span.category-btn__text Cuscini/Sedie
+											//- span.category-btn__connect
+									.swiper-slide
+										button.btn.btn-primary.btn-small.btn-pillow.category-btn(type="button") 
+											span.category-btn__text Poltrone
+											//- span.category-btn__connect
+						.categories-content.flex-grow-1.d-flex.align-items-center
+							.swiper.categories-content-swiper(data-disallow-touch="true" data-next-selector=".process-button-next", data-prev-selector=".process-button-prev")
+								.swiper-wrapper 
+									.swiper-slide.h-auto
+										include process/process-furniture
+									.swiper-slide.h-auto
+										include process/process-mattress
+									.swiper-slide.h-auto
+										include process/process-carpet
+									.swiper-slide.h-auto
+										include process/process-pillow
+									.swiper-slide.h-auto
+										include process/process-armchair
+					.col-12.col-xl-4.p-relative.index-2(data-aos="fade-in") 
+						.row.g-2
+							.col-12.col-sm-6.col-lg-6.col-xl-12
+								.card.card-primary-outline.card-rounded
+									.card__header
+										.card__icon 
+											svg(width="48" height="48")
+												use(href="#rating")
+										h4.h6.card__title.mb-0 
+											span.h3 1. 
+											| Valutazione dello stato e identificazione delle macchie
+							.col-12.col-sm-6.col-lg-6.col-xl-12
+								.card.card-primary-outline.card-rounded
+									.card__header
+										.card__icon 
+											svg(width="48" height="48")
+												use(href="#dry-cleaning")
+										h4.h6.card__title.mb-0 
+											span.h3 2. 
+											| Rimozione della polvere e preparazione a secco
+							.col-12.col-sm-6.col-lg-6.col-xl-12
+								.card.card-primary-outline.card-rounded
+									.card__header
+										.card__icon
+											svg(width="48" height="48")
+												use(href="#detergent")
+										h4.h6.card__title.mb-0 
+											span.h3 3. 
+											| Applicazione del detergente
+							.col-12.col-sm-6.col-lg-6.col-xl-12
+								.card.card-primary-outline.card-rounded
+									.card__header
+										.card__icon 
+											svg(width="48" height="48")
+												use(href="#process")
+										h4.h6.card__title.mb-0 
+											span.h3 4. 
+											| Pulizia profonda ad estrazione
+							.col-12.col-sm-6.col-lg-6.col-xl-12
+								.card.card-primary-outline.card-rounded
+									.card__header
+										.card__icon 
+											svg(width="48" height="48")
+												use(href="#local-cleaning")
+										h4.h6.card__title.mb-0 
+											span.h3 5. 
+											| Rimozione locale delle macchie ostinate
+							.col-12.col-sm-6.col-lg-6.col-xl-12
+								.card.card-primary-outline.card-rounded
+									.card__header
+										.card__icon 
+											svg(width="48" height="48")
+												use(href="#result")
+										h4.h6.card__title.mb-0 
+											span.h3 6. 
+											| Asciugatura e controllo finale della qualità

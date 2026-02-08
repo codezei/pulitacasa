@@ -1,0 +1,181 @@
+section.reviews.block#reviews
+	.container
+		.row.g-4 
+			.col-12
+				.row.align-items-center.justify-content-between.g-2
+					.col-auto(data-aos="fade-right")
+						h2.reviews__title.text-uppercase.mb-0 Recensioni
+					.col-auto(data-aos="fade-left") 
+						.swiper-navigation
+							.reviews-button-prev.btn.btn-primary.btn-small.btn-circle
+								svg.bi.bi-chevron-left.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0")
+							.reviews-button-next.btn.btn-primary.btn-small.btn-circle
+								svg.bi.bi-chevron-right.d-block(xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16")
+									path(fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708")
+					.col-12(data-aos="fade-in") 
+						h3.reviews__subtitle.h4.h6.text-light.mb-0 Recensioni dei clienti che hanno usufruito dei nostri servizi
+							span we 
+			.col-12(data-aos="fade-in" data-aos-delay="100") 
+				.swiper.reviews-swiper 
+					.swiper-wrapper
+						.swiper-slide
+							.review.card.card-primary-outline.card-leaf 
+								.review__header
+									h4.h6.review__name Marco Rossi
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Ho appena fatto pulire il divano e sono rimasto impressionato dalla professionalità del team. Tutte le macchie sono sparite e il tessuto sembra nuovo! Servizio veloce e impeccabile, consigliatissimo.
+									//- picture 
+									//- 	source(srcset="img/review-img-1.webp" type="image/webp")
+									//- 	img.review__img(src="img/review-img-1.jpg", alt="", loading="lazy")
+								//- .review__toggle
+								//- 	span.in-active-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye")
+								//- 		| Mostra di più
+								//- 	span.in-inactive-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye-close")
+								//- 		| Mostra di meno
+						.swiper-slide
+							.review.card.card-primary-outline.card-leaf 
+								.review__header
+									h4.h6.review__name Giulia Bianchi
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Sono davvero soddisfatta del servizio di pulizia divani! Il mio divano era macchiato da mesi e ora è perfetto, pulito e profumato. Professionisti affidabili e gentili.
+								//- .review__toggle
+								//- 	span.in-active-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye")
+								//- 		| Mostra di più
+								//- 	span.in-inactive-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye-close")
+								//- 		| Mostra di meno
+						.swiper-slide
+							.review.card.card-primary-outline.card-leaf 
+								.review__header
+									h4.h6.review__name Alessandro Verdi
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Ho richiesto la pulizia del materasso e il risultato è eccellente. Tutte le macchie e gli odori sono spariti, il materasso è tornato come nuovo. Servizio rapido e professionale.
+								//- .review__toggle
+								//- 	span.in-active-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye")
+								//- 		| Mostra di più
+								//- 	span.in-inactive-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye-close")
+								//- 		| Mostra di meno
+						.swiper-slide
+							.review.card.card-primary-outline.card-leaf 
+								.review__header
+									h4.h6.review__name Francesca Neri
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Materasso pulito alla perfezione! Non credevo che sarebbe tornato così fresco e igienizzato. Team molto professionale e disponibile. Lo consiglio assolutamente.
+								//- .review__toggle
+								//- 	span.in-active-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye")
+								//- 		| Mostra di più
+								//- 	span.in-inactive-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye-close")
+								//- 		| Mostra di meno
+						.swiper-slide
+							.review.card.card-primary-outline.card-leaf 
+								.review__header
+									h4.h6.review__name Luca Romano
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Ho fatto pulire il tappeto persiano e il risultato è sorprendente. I colori sono tornati vividi e tutte le macchie sono sparite. Servizio puntuale e molto professionale.
+									//- picture 
+									//- 	source(srcset="img/review-img-3.webp" type="image/webp")
+									//- 	img.review__img(src="img/review-img-3.jpg", alt="", loading="lazy")
+								//- .review__toggle
+								//- 	span.in-active-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye")
+								//- 		| Mostra di più
+								//- 	span.in-inactive-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye-close")
+								//- 		| Mostra di meno
+						.swiper-slide
+							.review.card.card-primary-outline.card-leaf 
+								.review__header
+									h4.h6.review__name Chiara Fontana
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Servizio eccellente! Il tappeto è tornato come nuovo, pulito in profondità senza danneggiare le fibre. Professionisti seri e affidabili.
+								//- .review__toggle
+								//- 	span.in-active-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye")
+								//- 		| Mostra di più
+								//- 	span.in-inactive-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye-close")
+								//- 		| Mostra di meno
+						.swiper-slide
+							.review.card.card-primary-outline.card-leaf  
+								.review__header
+									h4.h6.review__name Matteo Conti
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Ho pulito cuscini e sedie e non potrei essere più soddisfatto. Ogni pezzo è come nuovo e il profumo di pulito rimane a lungo. Staff cortese e professionale.
+								//- .review__toggle
+								//- 	span.in-active-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye")
+								//- 		| Mostra di più
+								//- 	span.in-inactive-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye-close")
+								//- 		| Mostra di meno
+						.swiper-slide
+							.review.card.card-primary-outline.card-leaf  
+								.review__header
+									h4.h6.review__name Elena Greco
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Cuscini e sedie puliti a fondo! Non solo hanno eliminato tutte le macchie, ma hanno anche restituito morbidezza e freschezza ai tessuti. Servizio impeccabile.
+								//- .review__toggle
+								//- 	span.in-active-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye")
+								//- 		| Mostra di più
+								//- 	span.in-inactive-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye-close")
+								//- 		| Mostra di meno
+						.swiper-slide
+							.review.card.card-primary-outline.card-leaf  
+								.review__header
+									h4.h6.review__name Giovanni De Luca
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Poltrone pulite alla perfezione! Il tessuto è tornato come nuovo, senza tracce di sporco o polvere. Team molto professionale e preciso.
+								//- .review__toggle
+								//- 	span.in-active-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye")
+								//- 		| Mostra di più
+								//- 	span.in-inactive-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye-close")
+								//- 		| Mostra di meno
+						.swiper-slide
+							.review.card.card-primary-outline.card-leaf  
+								.review__header
+									h4.h6.review__name Laura Martini
+									.rating.review__rating(style="--star-rating: 5;")
+								p.review__text Servizio di pulizia poltrone eccezionale! Tutto è stato curato nei minimi dettagli, le poltrone sono fresche e pulite, e il team è molto cordiale e puntuale.
+								//- .review__toggle
+								//- 	span.in-active-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye")
+								//- 		| Mostra di più
+								//- 	span.in-inactive-none 
+								//- 		svg.icon.icon-right(width="16" height="16")
+								//- 			use(href="#eye-close")
+								//- 		| Mostra di meno
+			.col-12 
+				.text-center
+					a(href="" target="_blank") Qui
+					| &nbsp;puoi leggere tutte le recensioni e lasciare la tua.

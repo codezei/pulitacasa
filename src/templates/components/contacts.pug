@@ -1,0 +1,28 @@
+section#contacts.contacts.block
+    .container
+        .row.g-4 
+            .col-12(data-aos="fade-down")
+                h2.contacts__title.text-center.text-uppercase.mb-0 Contatti
+            .col-12(data-aos="fade-in" data-aos-delay="100") 
+            
+                //- .contacts__iframe(data-src="https://www.google.com/maps/d/embed?mid=1NW-3DDADMgjU1sjqFXeflnjLPHN13qU&ehbc=2E312F&noprof=1")
+            .col-12(data-aos="fade-in" data-aos-delay="200") 
+                .row.g-2 
+                    .col-12.col-md-6.col-lg-3.text-center
+                        .card.card-primary-outline.card-leaf
+                            h3.h6 Zone servite
+                            p 
+                                include cities
+                    .col-12.col-md-6.col-lg-3.text-center 
+                        .card.card-primary-outline.card-leaf
+                            h3.h6 Social media
+                            include socials
+                    .col-12.col-md-6.col-lg-3.text-center   
+                        .card.card-primary-outline.card-leaf
+                            h3.h6 Telefono
+                            a(href="tel:+99999999999").link +99999999999
+                    .col-12.col-md-6.col-lg-3.text-center
+                        .card.card-primary-outline.card-leaf
+                            h3.h6 Orari di lavoro
+                            p 
+                                include schedule
