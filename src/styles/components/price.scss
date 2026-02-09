@@ -1,11 +1,4 @@
 .price {
-    // &__btn {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     gap: 0.5rem;
-    //     justify-content: center;
-    //     margin-top: 2rem;
-    // }
     &-table {
         overflow: hidden;
         &__title {
@@ -20,9 +13,6 @@
         }
     }
     &-item {
-        // padding: 0.75rem;
-        // transition: all 400ms;
-        // flex-grow: 1;
         &__value {
             position: relative;
             padding-left: calc(1em + 0.5rem);
@@ -47,23 +37,6 @@
             justify-content: space-between;
             gap: 0.5rem;
         }
-        // &__calculation {
-        //     max-width: 120px;
-        //     margin-right: 80px;
-        // }
     }
 
-}
-
-.calculation {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    &__increase {
-        flex-shrink: 0;
-        margin-left: -40px;
-    }
-    &__count {
-        max-width: 100px;
-    }
 }

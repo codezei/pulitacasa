@@ -1,9 +1,6 @@
 
 .services {
-    // overflow: hidden;
-    // position: relative;
-    // z-index: 1;
-    // background: linear-gradient(to bottom, transparent 0%, #191919 20%, #191919 80%, transparent 100%);
+
     &-swiper {
         overflow: visible;
         .swiper-wrapper {
@@ -13,39 +10,11 @@
             height: auto;
         }
     }
-    // &__row {
-    //     --bs-gutter-x: 1rem;
-    //     --bs-gutter-y: 1rem;
-    // }
-    // &__container {
-    //     --bs-gutter-x: 2;
-    // }
-    // &__btn {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     gap: 0.5rem;
-    //     justify-content: center;
-    //     margin-top: 2rem;
-    // }
-    // &__title {
-    //     position: relative;
-    //     margin-bottom: 0.5rem;
-    // }
-    // &__subtitle {
-    //     margin-bottom: 0;
-    // }
-    // &__description {
-    //     font-size: 0.9em;
 
-    // }
-    // &__navigation {
-    //     margin-bottom: var(--h2);
-    // }
 }
 
 .service {
-    // --border-color: var(--fourth-color);
-    // --substrate-color: var(--section-color);
+
     --padding: 0;
     position: relative;
     height: 100%;
@@ -54,10 +23,7 @@
     position: relative;
     border-radius: 5rem 0 2rem 0;
     position: relative;
-    // box-shadow: -5px -5px 15px var(--second-color);
 
-    // user-select: none;
-    // overflow: hidden;
     &__header {
         padding: 1rem 1rem 0;
     }
@@ -67,10 +33,7 @@
         text-transform: uppercase;
         width: 260px;
         height: 48px;
-        // background: red;
-        // color: #fff;
-        // clip-path: path("M 0,0 L 212,0 A 16,16 0,0,1 228,16 A 24,24 0,0,0 260,48 L 0,48 L 0,0");
-        // clip-path: path("M 0,0 A 40,40 0,0,1 40,40 A 40,40 0,0,0 80,80 L 80,0");
+
     }
     &__img {
         position: relative;
@@ -95,10 +58,6 @@
             margin-bottom: 0;
         }
         
-        // overflow: hidden;
-        // display: -webkit-box;
-        // -webkit-line-clamp: 3;
-        // -webkit-box-orient: vertical;
     }
     &__footer {
         padding: 0 1rem 1rem;
@@ -132,27 +91,5 @@
             transform: rotate(0deg);
         }
     }
-    // &__btn {
-    //     border-radius: 0 0 10px 0;
-    //     padding: 1rem;
-    //     padding-right: 2rem;
-    //     width: calc(100% - 0.5rem);
-    // }
-}
 
-.badges {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
-    li {
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        background: rgb(255, 255, 255);
-        border: 1px solid yellow;
-        flex-grow: 1;
-        margin: 0 !important;
-    }
 }

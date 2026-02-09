@@ -17,19 +17,22 @@
   //   margin-bottom: 1rem;
   // }
   &__description {
-    padding-left: 2rem;
+    
     padding-right: 2rem;
   }
 
   @media screen and (min-width: 768px) {
     flex-direction: column;
+    &__description {
+      padding-left: 2rem;
+    }
   }
 
   @media screen and (min-width: 992px) {
     --progress-size: 120px;
   }
 
-  @media screen and (min-width: 1220px) {
+  @media screen and (min-width: 1200px) {
     --progress-size: 150px;
   }
 }
@@ -63,6 +66,7 @@
     stroke: #fff;
     stroke-width: 20px;
     fill: none;
+    filter: drop-shadow(0 0 1px var(--first-color-125));
   }
 
   &__bar-fg {
